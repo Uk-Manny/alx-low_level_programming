@@ -5,7 +5,7 @@
  * _strlen - returns the length of a string
  * @s: string to evaluate
  *
- * Return: the lenth of the string
+ * Return: the length of the string
  */
 int _strlen(char *s)
 {
@@ -51,7 +51,7 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * ne_dog - creates a new dog
+ * new_dog - creates a new dog
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
@@ -76,7 +76,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-
 	dog->owner = malloc(sizeof(char) * (len2 + 1));
 	if (dog->owner == NULL)
 	{
@@ -90,3 +89,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (dog);
 }
+
